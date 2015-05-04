@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Matching</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<style>
+  #cover {
+    background: url("to/your/ajaxloader.gif") no-repeat scroll center center #FFF;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+</style>  
+  
+<script>
+    $(window).load(function(){
+        $('#cover').fadeOut(1000);
+    })
+</script>  
+<body>
+  <div id="cover"></div>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">String Matching</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <!-- <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="/bruteforce"><i class="fa fa-dashboard fa-fw"></i> <b>Brute Force</b></a>
+                        </li>
+                        <li>
+                            <a href="/morissprat"><i class="fa fa-dashboard fa-fw"></i> <b>Moriss Prat</b></a>
+                        </li>
+                        <li>
+                            <a href="/shiftor"><i class="fa fa-dashboard fa-fw"></i> <b>Shift Or</b></a>
+                        </li>
+                        <li>
+                            <a href="/knuthmorissprat"><i class="fa fa-dashboard fa-fw"></i><b>Knuth Moriss Prat</b></a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div> -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+        <%= yield %>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+  
+  
+
+
+</body>
+</html>
